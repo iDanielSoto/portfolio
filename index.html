@@ -12,9 +12,11 @@
             margin: 0;
             background-color: #f8f4e8;
             display: flex;
+            gap: 1em;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+            margin: 1em;
         }
 
         .passport-card {
@@ -32,9 +34,8 @@
             position: relative;
         }
 
-        .passport-card::before,
         .passport-card::after {
-            content: "★ ★ ★ ★ ★ ★ ★ ★ ★ ★";
+            content: "★";
             font-size: 18px;
             color: #111111;
             position: absolute;
@@ -115,7 +116,7 @@
     </style>
 </head>
 <body>
-    <div class="passport-card">
+    <header class="passport-card">
         <img class="profile-photo" src="images/daniel.png" alt="Foto de perfil">
         <div class="passport-details">
             <div class="detail-line">
@@ -135,6 +136,12 @@
                 <span class="signature">Dan* :)</span>
             </div>
         </div>
-    </div>
+    </header>
+    <main>
+        <section>
+            <h1>El TecNM desgasto mi vida</h1>
+            <p>Sí, el TecNM está drenando mi energía vital del cuerpo, mi aura esta siendo apagada gracias a una ingeniería en sistemas computacionales la cual me hace exigirme mucho porque piden muchas mafufadas que no ocupare en un futuro en vez de enseñarme como es el mundo laboral en la parte de las empresas donde existe mucha sobreexplotación y chantajes y cosas malas, me preparan para algo sin armas, me van a matar si llego a la empresa con los conocimientos de mierda que mde dejan en el TecNM</p>
+        </section>
+    </main>
 </body>
 </html>
