@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Soto</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); */
+        
+        body {
+            font-family: 'Special Elite', monospace;
+            margin: 0;
+            background-color: #f8f4e8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .passport-card {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            align-items: center;
+            background-color: #fcf4db;
+            border: 2px solid #000;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 500px;
+            height: 250px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .passport-card::before,
+        .passport-card::after {
+            content: "★ ★ ★ ★ ★ ★ ★ ★ ★ ★";
+            font-size: 18px;
+            color: #111111;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .passport-card::after {
+            top: auto;
+            bottom: 10px;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 10px;
+            box-shadow: -5px 5px 0 rgba(0, 0, 0, 0.585);
+            rotate: -2deg;
+        }
+
+        .passport-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .detail-line {
+            display: flex;
+            align-items: baseline;
+            gap: 5px;
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        .detail-line strong {
+            color: #333;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .detail-line span {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            border-bottom: 2px dotted #000;
+            color: #000;
+        }
+
+        .passport-stamp {
+            font-size: 0.9em;
+            color: #0066cc;
+            border: 2px dashed #0066cc;
+            padding: 5px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .signature-line {
+            display: flex;
+            text-align: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .signature-line span {
+            flex: 1;
+            border-bottom: 2px dotted #000;
+        }
+
+        .signature {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 2em;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="passport-card">
+        <img class="profile-photo" src="images/daniel.png" alt="Foto de perfil">
+        <div class="passport-details">
+            <div class="detail-line">
+                <strong>Nombre:</strong>
+                <span>Daniel Soto</span>
+            </div>
+            <div class="detail-line">
+                <strong>Nacimiento:</strong>
+                <span>09/04/2005</span>
+            </div>
+            <div class="detail-line">
+                <strong>Ciudad:</strong>
+                <span>LZC</span>
+            </div>
+            <div class="passport-stamp">Desarrollador de Software 💻</div>
+            <div class="signature-line">
+                <span class="signature">Dan* :)</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
