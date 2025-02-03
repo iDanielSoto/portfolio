@@ -1,6 +1,6 @@
 body {
-    color: #cccfd7;
-    background-color: #161617;
+    color: #f9e0ff;
+    background-color: #14141a;
     font-family: system-ui;
     font-size: 1.4em;
     display: flex;
@@ -18,14 +18,48 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 60%;
     gap: 1em;
 }
 
-h1, p {
+h1, p, a {
     margin: 0;
 }
 
 img {
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: none;
+    animation: entrada 0.8s ease-in-out;
+}
+
+a {
+    color: #9185ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    background: transparent;
+    padding: 2px 20px;
+    filter: grayscale(1);
+}
+
+span {
+    font-family: "Jetbrains Mono";
+}
+
+.liked {
+    filter: grayscale(0);
+}
+
+@keyframes entrada {
+    from {
+        filter: blur(10px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
 }
