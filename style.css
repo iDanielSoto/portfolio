@@ -49,10 +49,6 @@ span {
     font-family: "JetBrains Mono";
 }
 
-.liked {
-    filter: grayscale(0);
-}
-
 @keyframes entrada {
     from {
         filter: blur(10px);
