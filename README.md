@@ -1,2 +1,3 @@
-# portfolio
-> [Ver portafolio](https://idanielsoto.github.io/portfolio/ )
+# Portafolio
+Esta en construcción, no se espante
+> [Ir al portafolio](https://idanielsoto.github.io/portfolio/ )
